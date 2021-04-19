@@ -14,6 +14,7 @@ if(hamburgerName === ""){
 // console.log(hamburgerName);
 
     // INSERISCO TUTTI GLI INGREDIENTI IN UNO PSEUDO-ARRAY
+    // Solo qualli con classe ingredient e type = "checkbox" 
 var ingredientsList = document.querySelectorAll(".ingredient [type='checkbox']");
 
 var somma = 50;

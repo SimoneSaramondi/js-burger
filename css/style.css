@@ -196,3 +196,8 @@
     font-size: 200%;
     font-weight: bold;
   }
+
+  .checkbox label:hover{
+    background-color: #f9395e;
+    border-radius: 5px;
+  }
