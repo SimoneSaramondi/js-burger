@@ -29,6 +29,10 @@ for(var i = 0; i < ingredientsList.length; i++){
     }
 }
 
+function price(cash, discount){
+    return cash = cash - (cash * discount);
+}
+
 var couponOne = "12345ABCDEF";
 var couponTwo = "54321ABCDEF";
 var couponThree = "12345FEDCBA";
@@ -38,10 +42,10 @@ var coupon = document.getElementById("coupon");
 var couponTrue = coupon.value;
 
 if(couponTrue === couponOne || couponTrue === couponTwo || couponTrue === couponThree ){
-    somma -= (somma * discountActive);
+    var priceBurger = price(somma, discountActive);
 }
 
-document.getElementById("price").innerText = somma;
+document.getElementById("price").innerText = priceBurger;
 
 }
 })
